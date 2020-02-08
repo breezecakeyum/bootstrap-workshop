@@ -27,7 +27,7 @@ header h2 {
 }
 
 .row-content {
-    margin: 5px;
+    margin: 50px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
 }

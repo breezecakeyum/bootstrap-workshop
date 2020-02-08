@@ -21,6 +21,7 @@
 <body>
 
     <header class="jumbotron jumbotron-fluid">
+        <button><a href="#reserveForm"></a></button>
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -30,7 +31,7 @@
             </div>
             <div class="col-4 col-sm-3 col-md-2 align-self-center">
                 <img src="img/logo.png" class="img-fluid" />
-             </div>       
+            </div>       
         </div>
     </header>
 
@@ -64,28 +65,30 @@
                 </div>
             </div>
         </div>
-    </div>
 
-        <div class="container">
             <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
             <div class="col">
+                <div class="media">
+                
+                <div class="media-body align-self-center">
                 <h3>React Lake Campground</h3>
         		<p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p class="d-none d-sm-block">
-   			</div>
+                </div>
+                <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake">
+               </div>
+            </div>
         </div>
-    </div>
 
-    <div class="container">
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
             </div>
             <div class="col">
                 <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail " src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters">
                     <div class="media-body align-self-center">
                         <h3>Bootstrap Outfitters</h3>
         				<p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
@@ -93,9 +96,47 @@
                 </div>
             </div>
         </div>
+
+        <div class="row row-content align-items-center">
+            <div class="col-sm-12 mx-auto">
+                <div class="card">
+                    <h3 class="card-header bg-info text-white">
+                        Reserve your campsite
+                    </h3>
+                    <div class="card-body">
+                        <form id="reserveForm">
+                            <div class="form-group row">
+                                <label class="col-sm-6 col-form-label">Number of Campers</label>
+                                <div class="col">
+                                    <select class="form-control" name="numCampers" id="numCampers">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-6 col-form-label">Date</label>
+                                <div class="col">
+                                    <input class="form-control" type="date" id="date" name="date" placeholder="mm/yy/dd">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-info">Search</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <div class="row">             
                 <div class="col-4 col-sm-2 offset-1">
