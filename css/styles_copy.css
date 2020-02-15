@@ -12,7 +12,7 @@ h1, h2, h3 {
 }
 
 h2 {
-    color: rgb(92, 115, 241);
+    color:  rgb(80, 150, 241);
 }
 
 header h2 {
@@ -20,14 +20,40 @@ header h2 {
 }
 
 .site-footer{
-    background-image: linear-gradient(#b7a8f8, white);
+    background-image: linear-gradient(to right, rgb(33, 44, 192), rgb(72, 203, 255));
     padding: 20px 0px;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+.btn-link{
+    color: white;
+}
+
+.list-unstyled a{
+    color: white;
+}
+
+.footer-copyright a{
+    color: white;
+}
+
+.footer-copyright a:hover{
+    text-shadow: 0px 0px;
+}
+
+.btn-link:hover{
+    text-shadow: 0px 0px;
+}
+
+.list-unstyled a:hover{
+    text-shadow: 0px 0px;
 }
 
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
+    background-image: linear-gradient(to right, rgb(33, 44, 192), rgb(72, 203, 255));
     color: white;
 }
 
@@ -37,14 +63,14 @@ header h2 {
     min-height: 200px;
 }
 .navbar{
-    background-color: #901CAD;
+    background-color: rgb(28, 91, 173);
     font-family: 'Odibee Sans', cursive;
 }
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel {
-    border: solid 1px #5637DD;
+    border: solid 1px rgb(28, 91, 173);
 }
 #reserveButton{
     font-family: 'Odibee Sans', cursive;
